@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "d20d4ac6-531c-4988-bf73-ab0056948295",
+		"_postman_id": "933b0597-20cb-4702-b4a7-6a60a63bc6b9",
 		"name": "DEMO1",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -116,7 +116,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n  \"fvBD\": {\n    \"attributes\": {\n      \"OptimizeWanBandwidth\": \"no\",\n      \"annotation\": \"\",\n      \"arpFlood\": \"no\",\n      \"descr\": \"\",\n      \"dn\": \"uni/tn-{{tenant}}/BD-{{bd}}\",\n      \"epClear\": \"no\",\n      \"epMoveDetectMode\": \"\",\n      \"hostBasedRouting\": \"no\",\n      \"intersiteBumTrafficAllow\": \"no\",\n      \"intersiteL2Stretch\": \"no\",\n      \"ipLearning\": \"yes\",\n      \"limitIpLearnToSubnets\": \"yes\",\n      \"llAddr\": \"::\",\n      \"mac\": \"0{{mac}}}}\",\n      \"mcastAllow\": \"no\",\n      \"multiDstPktAct\": \"bd-flood\",\n      \"name\": \"{{bd}}\",\n      \"nameAlias\": \"\",\n      \"ownerKey\": \"\",\n      \"ownerTag\": \"\",\n      \"type\": \"regular\",\n      \"unicastRoute\": \"yes\",\n      \"unkMacUcastAct\": \"proxy\",\n      \"unkMcastAct\": \"flood\",\n      \"v6unkMcastAct\": \"flood\",\n      \"vmac\": \"not-applicable\"\n    },\n    \"children\": [\n      {\n        \"fvSubnet\": {\n          \"attributes\": {\n            \"annotation\": \"\",\n            \"ctrl\": \"\",\n            \"descr\": \"\",\n            \"ip\": \"{{gateway}}/{{mask}}\",\n            \"name\": \"\",\n            \"nameAlias\": \"\",\n            \"preferred\": \"no\",\n            \"scope\": \"private\",\n            \"status\": \"{{status}}\",\n            \"virtual\": \"no\"\n          }\n        }\n      },\n      {\n        \"fvRsMldsn\": {\n          \"attributes\": {\n            \"annotation\": \"\",\n            \"tnMldSnoopPolName\": \"\"\n          }\n        }\n      },\n      {\n        \"fvRsIgmpsn\": {\n          \"attributes\": {\n            \"annotation\": \"\",\n            \"tnIgmpSnoopPolName\": \"\"\n          }\n        }\n      },\n      {\n        \"fvRsCtx\": {\n          \"attributes\": {\n            \"annotation\": \"\",\n            \"tnFvCtxName\": \"{{vrf}}\"\n          }\n        }\n      },\n      {\n        \"fvRsBdToEpRet\": {\n          \"attributes\": {\n            \"annotation\": \"\",\n            \"resolveAct\": \"resolve\",\n            \"tnFvEpRetPolName\": \"\"\n          }\n        }\n      },\n      {\n        \"fvRsBDToNdP\": {\n          \"attributes\": {\n            \"annotation\": \"\",\n            \"tnNdIfPolName\": \"\"\n          }\n        }\n      }\n    ]\n  }\n}"
+					"raw": "{\n  \"fvBD\": {\n    \"attributes\": {\n      \"OptimizeWanBandwidth\": \"no\",\n      \"annotation\": \"\",\n      \"arpFlood\": \"no\",\n      \"descr\": \"\",\n      \"dn\": \"uni/tn-{{tenant}}/BD-{{bd}}\",\n      \"epClear\": \"no\",\n      \"epMoveDetectMode\": \"\",\n      \"hostBasedRouting\": \"no\",\n      \"intersiteBumTrafficAllow\": \"no\",\n      \"intersiteL2Stretch\": \"no\",\n      \"ipLearning\": \"yes\",\n      \"limitIpLearnToSubnets\": \"yes\",\n      \"llAddr\": \"::\",\n      \"mac\": \"0{{mac}}}}\",\n      \"mcastAllow\": \"no\",\n      \"multiDstPktAct\": \"bd-flood\",\n      \"name\": \"{{bd}}\",\n      \"nameAlias\": \"\",\n      \"ownerKey\": \"\",\n      \"ownerTag\": \"\",\n      \"type\": \"regular\",\n      \"unicastRoute\": \"yes\",\n      \"unkMacUcastAct\": \"proxy\",\n      \"unkMcastAct\": \"flood\",\n      \"v6unkMcastAct\": \"flood\",\n      \"vmac\": \"not-applicable\"\n    },\n    \"children\": [\n      {\n        \"fvSubnet\": {\n          \"attributes\": {\n            \"annotation\": \"\",\n            \"ctrl\": \"\",\n            \"descr\": \"\",\n            \"ip\": \"{{gateway}}/{{mask}}\",\n            \"name\": \"\",\n            \"nameAlias\": \"\",\n            \"preferred\": \"no\",\n            \"scope\": \"private\",\n            \"status\": \"{{status_is}}\",\n            \"virtual\": \"no\"\n          }\n        }\n      },\n      {\n        \"fvRsMldsn\": {\n          \"attributes\": {\n            \"annotation\": \"\",\n            \"tnMldSnoopPolName\": \"\"\n          }\n        }\n      },\n      {\n        \"fvRsIgmpsn\": {\n          \"attributes\": {\n            \"annotation\": \"\",\n            \"tnIgmpSnoopPolName\": \"\"\n          }\n        }\n      },\n      {\n        \"fvRsCtx\": {\n          \"attributes\": {\n            \"annotation\": \"\",\n            \"tnFvCtxName\": \"{{vrf}}\"\n          }\n        }\n      },\n      {\n        \"fvRsBdToEpRet\": {\n          \"attributes\": {\n            \"annotation\": \"\",\n            \"resolveAct\": \"resolve\",\n            \"tnFvEpRetPolName\": \"\"\n          }\n        }\n      },\n      {\n        \"fvRsBDToNdP\": {\n          \"attributes\": {\n            \"annotation\": \"\",\n            \"tnNdIfPolName\": \"\"\n          }\n        }\n      }\n    ]\n  }\n}"
 				},
 				"url": {
 					"raw": "https://{{apic}}/api/node/mo/uni/tn-{{tenant}}/BD-{{bd}}.json",
@@ -171,7 +171,7 @@
 			"response": []
 		},
 		{
-			"name": "Create epg1",
+			"name": "Create epg1 WEB",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -200,6 +200,169 @@
 						"tn-{{tenant}}",
 						"ap-{{ap}}",
 						"epg-{{epg1}}.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create epg2 DB",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fvAEPg\": {\n        \"attributes\": {\n            \"dn\": \"uni/tn-{{tenant}}/ap-AP_DEMO1/epg-{{epg2}}\",\n            \"name\": \"{{epg2}}\",\n            \"rn\": \"epg-{{epg2}}\",\n            \"status\": \"created\"\n        },\n        \"children\": [\n            {\n                \"fvRsBd\": {\n                    \"attributes\": {\n                        \"tnFvBDName\": \"{{bd}}\",\n                        \"status\": \"created,modified\"\n                    },\n                    \"children\": []\n                }\n            }\n        ]\n    }\n}"
+				},
+				"url": {
+					"raw": "https://{{apic}}/api/node/mo/uni/tn-{{tenant}}/ap-{{ap}}/epg-{{epg2}}.json",
+					"protocol": "https",
+					"host": [
+						"{{apic}}"
+					],
+					"path": [
+						"api",
+						"node",
+						"mo",
+						"uni",
+						"tn-{{tenant}}",
+						"ap-{{ap}}",
+						"epg-{{epg2}}.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Filter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"vzBrCP\": {\n    \"attributes\": {\n      \"dn\": \"uni/tn-{{tenant}}/brc-{{contract}}\",\n      \"name\": \"{{contract}}\",\n      \"scope\": \"tenant\",\n      \"rn\": \"{{contract}}\",\n      \"status\": \"created\"\n    },\n    \"children\": [\n      {\n        \"vzSubj\": {\n          \"attributes\": {\n            \"dn\": \"uni/tn-{{tenant}}/brc-{{contract}}/subj-testsub\",\n            \"name\": \"testsub\",\n            \"rn\": \"subj-testsub\",\n            \"status\": \"created\"\n          },\n          \"children\": [\n              {\n                 \"vzFilter\": {\n                   \"attributes\": {\n                        \"dn\": \"uni/tn-{{tenant}}/flt-{{filter}}\",\n                        \"name\": \"{{filter}}\",\n                        \"rn\": \"flt-{{filter}}\",\n                        \"status\": \"created\"\n                    },\n                    \"children\": [\n                        {\n                            \"vzEntry\": {\n                            \"attributes\": {\n                            \"dn\": \"uni/tn-{{tenant}}/flt-{{filter}}/e-other123\",\n                            \"name\": \"other123\",\n                            \"etherT\": \"ip\",\n                            \"prot\": \"tcp\",\n                            \"sFromPort\": \"http\",\n                            \"sToPort\": \"http\",\n                            \"rn\": \"e-other123\",\n                            \"status\": \"created\"\n                                },\n                                \"children\": []\n                            }\n                        }\n                        ]\n                    }\n                }\n            ]\n        }\n      }\n    ]\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{apic}}/api/node/mo/uni/tn-{{tenant}}.json",
+					"protocol": "https",
+					"host": [
+						"{{apic}}"
+					],
+					"path": [
+						"api",
+						"node",
+						"mo",
+						"uni",
+						"tn-{{tenant}}.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Contract",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"vzBrCP\": {\n    \"attributes\": {\n      \"dn\": \"uni/tn-{{tenant}}/brc-{{contract}}\",\n      \"name\": \"{{contract}}\",\n      \"scope\": \"tenant\",\n      \"rn\": \"{{contract}}\",\n      \"status\": \"created,modified\"\n    },\n    \"children\": [\n      {\n        \"vzSubj\": {\n          \"attributes\": {\n            \"dn\": \"uni/tn-{{tenant}}/brc-{{contract}}/subj-testsub\",\n            \"name\": \"testsub\",\n            \"rn\": \"subj-testsub\",\n            \"status\": \"created,modified\"\n          },\n          \"children\": [\n              {\n                \t\"vzRsSubjFiltAtt\": {\n\t\t\t\t\t\"attributes\": {\n\t\t\t\t\t\"status\": \"created,modified\",\n\t\t\t\t\t\"tnVzFilterName\": \"{{filter}}\",\n\t\t\t\t\t\"directives\": \"none\"\n\t\t\t\t\t},\n\t\t\t\t\t\"children\": []\n\t\t\t\t\t}\n              }\n          ]\n        }\n      }\n    ]\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{apic}}/api/node/mo/uni/tn-{{tenant}}.json",
+					"protocol": "https",
+					"host": [
+						"{{apic}}"
+					],
+					"path": [
+						"api",
+						"node",
+						"mo",
+						"uni",
+						"tn-{{tenant}}.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Associate EPG1 with contract",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"fvRsProv\": {\n    \"attributes\": {\n      \"tnVzBrCPName\": \"{{contract}}\"\n    },\n    \"children\": []\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{apic}}/api/node/mo/uni/tn-{{tenant}}/ap-{{ap}}/epg-{{epg1}}.json",
+					"protocol": "https",
+					"host": [
+						"{{apic}}"
+					],
+					"path": [
+						"api",
+						"node",
+						"mo",
+						"uni",
+						"tn-{{tenant}}",
+						"ap-{{ap}}",
+						"epg-{{epg1}}.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Associate EPG2 with contract",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"fvRsCons\": {\n    \"attributes\": {\n      \"tnVzBrCPName\": \"{{contract}}\"\n    },\n    \"children\": []\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://{{apic}}/api/node/mo/uni/tn-{{tenant}}/ap-{{ap}}/epg-{{epg2}}.json",
+					"protocol": "https",
+					"host": [
+						"{{apic}}"
+					],
+					"path": [
+						"api",
+						"node",
+						"mo",
+						"uni",
+						"tn-{{tenant}}",
+						"ap-{{ap}}",
+						"epg-{{epg2}}.json"
 					]
 				}
 			},
