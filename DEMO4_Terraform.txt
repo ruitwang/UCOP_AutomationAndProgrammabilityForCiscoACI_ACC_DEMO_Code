@@ -1,0 +1,13 @@
+1- Commponents
+2- Create variable file
+3- Create 3tier of application (Tenant-VRF-2xBDs-AP-2xEPGs)
+4- Destroy Tenant
+
+-----------------------------------------
+NOTE: after downloading terraform you need to download ACI provider
+
+$ mkdir -p $GOPATH/src/github.com/CiscoDevNet; cd $GOPATH/src/github.com/CiscoDevNet
+$ git clone https://github.com/CiscoDevNet/terraform-provider-aci.git
+$ cd $GOPATH/src/github.com/CiscoDevNet/terraform-provider-aci
+$ dep ensure
+$ make build

@@ -1,0 +1,4 @@
+1- Commponents
+2- Create inventory - vars - creds - cfg file
+3- Create 3tier of application (Tenant-VRF-BD-6xsubnets-AP-6xEPGs)
+4- Create Contract (enable TCP EPG_1 and EPG_2)

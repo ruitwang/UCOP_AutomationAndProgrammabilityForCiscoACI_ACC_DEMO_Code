@@ -1,0 +1,28 @@
+- name: aci tenant
+  hosts: apic1
+  connection: local
+  gather_facts: false
+  vars_files:
+   - DEMO3_Ansible_vars.yml
+   - DEMO3_Ansible_creds.yml
+
+
+  tasks:
+
+  - name: create static port
+    aci_static_binding_to_epg:
+     host: "{{ apic_ip }}"
+     username: "{{ apic_username }}"
+     password: "{{ apic_password }}"
+     tenant: "{{ tenant }}"
+     ap: "{{ ap }}"
+     epg: "EPG_1"
+     encap_id: "{{ encap }}"
+     pod_id: "1"
+     leafs: "101"
+     interface: "{{ item }}"
+     interface_type: "switch_port"
+     description: static port binding to EPG
+     state: present
+     validate_certs: no
+    with_items: "{{ intf }}"

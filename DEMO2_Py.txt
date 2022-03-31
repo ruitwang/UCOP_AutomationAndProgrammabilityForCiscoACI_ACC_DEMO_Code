@@ -1,0 +1,13 @@
+1- Commponents
+2- Create Cred file
+3- Create 3tier of application (Tenant-VRF-BD-AP-EPG vlan)
+4- Create L3Out
+5- Showfaults
+
+------------------------
+install acitoolkit
+
+git clone https://github.com/datacenter/acitoolkit.git
+cd acitoolkit
+python setup.py install
+python3 setup.py install

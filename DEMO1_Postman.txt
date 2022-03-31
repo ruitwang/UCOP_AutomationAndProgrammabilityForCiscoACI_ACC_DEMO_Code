@@ -1,0 +1,4 @@
+1- Postman Commponents
+2- Create environments 
+3- Create Collection (Tenant-VRF-AP-EPG-BD with 20 subnets)
+4- Change subnets IPs and Mac addresses

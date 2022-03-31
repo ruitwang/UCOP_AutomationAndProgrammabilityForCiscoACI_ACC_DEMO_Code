@@ -1,0 +1,92 @@
+---
+
+- name: aci tenant
+  hosts: apic1
+  connection: local
+  gather_facts: false
+  vars_files:
+   - DEMO3_Ansible_vars.yml
+   - DEMO3_Ansible_creds.yml
+
+  tasks:
+
+  - name: create tenant
+    aci_tenant:
+     host: "{{ apic_ip }}"
+     username: "{{ apic_username }}"
+     password: "{{ apic_password }}"
+     tenant: "{{ tenant }}"
+     description: tenant created by Ansible
+     state: present
+     validate_certs: no
+
+  - name: create vrf
+    aci_vrf:
+     host: "{{ apic_ip }}"
+     username: "{{ apic_username }}"
+     password: "{{ apic_password }}"
+     vrf: "{{ vrf }}"
+     tenant: "{{ tenant }}"
+     description: vrf created by ansible
+     policy_control_preference: enforced
+     policy_control_direction: ingress
+     state: present
+     validate_certs: no
+
+
+  - name: Add Bridge Domain
+    aci_bd:
+     host: "{{ apic_ip }}"
+     username: "{{ apic_username }}"
+     password: "{{ apic_password }}"
+     validate_certs: no
+     tenant: "{{ tenant }}"
+     mac_address: 00:22:BD:F8:19:FE
+     bd: "{{ bd }}"
+     vrf: "{{ vrf }}"
+     description: bridge domain created by Ansible
+     state: present
+    delegate_to: localhost
+
+  - name: add a subnet with options
+    aci_bd_subnet:
+     host: "{{ apic_ip }}"
+     username: "{{ apic_username }}"
+     password: "{{ apic_password }}"
+     validate_certs: no
+     tenant: "{{ tenant }}"
+     bd: "{{ bd }}"
+     subnet_name: subnets
+     description: first subnet
+     gateway: "{{ item }}"
+     mask: 24
+     state: present
+    with_items: "{{ gateway }}"
+    delegate_to: localhost
+
+  - name: Add a new ap
+    aci_ap:
+     host: "{{ apic_ip }}"
+     username: "{{ apic_username }}"
+     password: "{{ apic_password }}"
+     validate_certs: no
+     tenant: "{{ tenant }}"
+     ap: "{{ ap }}"
+     description: Application Profile
+     state: present
+
+  - name: Add a new epg
+    aci_epg:
+     host: "{{ apic_ip }}"
+     username: "{{ apic_username }}"
+     password: "{{ apic_password }}"
+     validate_certs: no
+     tenant: "{{ tenant }}"
+     ap: "{{ ap }}"
+     epg: "{{ item }}"
+     description: epgs
+     state: present
+     bd: "{{ bd }}"
+    with_items: "{{ epg }}"
+
+

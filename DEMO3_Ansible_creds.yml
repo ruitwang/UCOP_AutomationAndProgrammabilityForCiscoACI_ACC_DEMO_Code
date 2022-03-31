@@ -1,0 +1,4 @@
+#apic1: 192.168.10.1
+apic_ip: 192.168.10.1
+apic_username: admin
+apic_password: Cisco!123
